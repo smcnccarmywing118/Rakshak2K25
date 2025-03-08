@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    padding: 0;
+    /* overflow: hidden; */
+}
+
+#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    background: #000; /* Fallback background color */
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.clg_logo img,
+.ncc_logo img {
+    height: 50px;
+}
+
+.clg_name {
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    font-family: 'Big Shoulders Stencil', sans-serif;
+}
+
+.menu {
+    padding: 10px;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu ul li {
+    margin: 0 15px;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.menu ul li a:hover {
+    color: #ffcc00;
+}
+
+
+
+.footer a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s;
+    padding: 10px;
+}
+
+.whatsapp:hover{
+    color: #25d366;
+}
+
+.instagram:hover{
+    color: #c13584;
+}
+
+.map:hover{
+    color: #1877f2;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: bottom;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

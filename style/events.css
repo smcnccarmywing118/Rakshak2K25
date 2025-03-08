@@ -1,0 +1,143 @@
+/* Events Section Styling */
+main h2 {
+    text-align: center;
+    color: #ffcc00;
+    font-size: 2.8rem;
+    margin: 2rem 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+main p {
+    text-align: center;
+    color: #ffcc00;
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+    font-family: 'Caveat', cursive;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+}
+
+.event-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 1.5rem;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.event-card:hover {
+    transform: translateY(-5px);
+}
+
+.event-name {
+    font-size: 1.2rem;
+    color: #ffcc00;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.event-title {
+    color: #fff;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #ffcc00;
+    padding-bottom: 0.5rem;
+}
+
+.event-details {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+    color: #ddd;
+}
+
+.event-details li {
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.event-details li::before {
+    content: "•";
+    color: #ffcc00;
+    position: absolute;
+    left: 0;
+}
+
+.event-heads {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 1rem;
+    border-radius: 8px;
+    color: #fff;
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+}
+
+.event-heads a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.event-heads strong {
+    color: #ffcc00;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .events-grid {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+        gap: 1.5rem;
+    }
+
+    .event-card {
+        padding: 1rem;
+    }
+
+    .event-title {
+        font-size: 1.5rem;
+    }
+
+    .event-name {
+        font-size: 1.1rem;
+    }
+
+    .event-details {
+        font-size: 0.9rem;
+    }
+
+    .event-heads {
+        font-size: 0.85rem;
+        padding: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .names h2 {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .event-title {
+        font-size: 1.3rem;
+    }
+    
+    .event-details li {
+        font-size: 0.85rem;
+    }
+}

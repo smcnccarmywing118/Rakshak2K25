@@ -1,0 +1,122 @@
+/* About Section Styling */
+.content-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.info-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 2rem;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+}
+
+.icon {
+    font-size: 2.5rem;
+    color: #ffcc00;
+    margin-bottom: 1.5rem;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+}
+
+.info-card h2 {
+    color: #ffcc00;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.info-card p {
+    color: #ddd;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 2rem auto;
+    margin-bottom: 3rem;
+}
+
+.stat-item {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 2rem;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.stat-item h3 {
+    color: #ffcc00;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+}
+
+.stat-item p {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content-section,
+    .stats {
+        padding: 1rem;
+        gap: 1.5rem;
+    }
+
+    .info-card {
+        padding: 1.5rem;
+    }
+
+    .info-card h2 {
+        font-size: 1.5rem;
+    }
+
+    .stat-item {
+        padding: 1.5rem;
+    }
+
+    .stat-item p {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .info-card h2 {
+        font-size: 1.3rem;
+    }
+
+    .info-card p {
+        font-size: 0.9rem;
+    }
+
+    .stat-item h3 {
+        font-size: 1rem;
+    }
+
+    .stat-item p {
+        font-size: 1.5rem;
+    }
+}
